@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def add_tuple(tuple_a=(), tuple_b=()):
     """
     add_tuple - adds 2 tuples and returns a tuple with 2 integers
