@@ -12,9 +12,10 @@ def new_in_list(my_list, idx, element):
     Returns:
     list: A new list with the element replaced if idx is valid, otherwise a copy of the original list.
     """
-    if idx < 0 or idx >= len(my_list):
-        return my_list[:]
+    #  Create a real copy of a list (not just reference)
+    new_list = my_list[:]
 
-    new_list = my_list[:]  # Create a shallow copy of the list
-    new_list[idx] = element
+    if idx >= 0 and idx < len(new_list):
+        new_list[idx] = element
+
     return new_list
