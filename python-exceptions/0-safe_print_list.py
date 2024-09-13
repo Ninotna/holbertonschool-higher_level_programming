@@ -1,17 +1,16 @@
 #!/usr/bin/python3
+
+
 def safe_print_list(my_list=[], x=0):
-    """
-    safe_print_list - Prints x elements of a list
-    @my_list: The input list which can contain any type
-    @x: The number of elements to print
-    Return: The actual number of elements printed
-    """
-    count = 0
-    try:
-        for i in range(x):
+    nb_printed = 0
+
+    for i in range(x):
+        try:
             print(my_list[i], end="")
-            count += 1
-    except IndexError:
-        pass
-    print()  # for new line after printing elements
-    return count
+            nb_printed += 1  # Increments only if printing succeeds
+
+        except IndexError:
+            break  # Exit the loop if loop is out of range
+
+    print()  # Print a new line
+    return nb_printed
