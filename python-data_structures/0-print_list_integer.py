@@ -12,5 +12,6 @@ def print_list_integer(my_list=[]):
     2
     3
     """
-    for number in my_list:
-        print("{}".format(number))
+def print_list_integer(my_list=[]):
+    for element in my_list:
+        print("{:d}".format(element))
