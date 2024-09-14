@@ -5,6 +5,7 @@ This module is composed by a function that divides the numbers of a matrix
 
 """
 
+
 def matrix_divided(matrix, div):
     """Function that divides the integer/float numbers of a matrix
 
@@ -33,8 +34,10 @@ def matrix_divided(matrix, div):
     msg_type = "matrix must be a matrix (list of lists) of integers/floats"
     msg_size = "Each row of the matrix must have the same size"
 
-    # Ensure the matrix is a list of lists and that the lists contain integers/floats
-    if not isinstance(matrix, list) or len(matrix) == 0 or not all(isinstance(row, list) for row in matrix):
+    # Ensure the matrix is a list of lists and that
+    # the lists contain integers/floats
+    if not isinstance(matrix, list) or len(matrix) == 0
+    or not all(isinstance(row, list) for row in matrix):
         raise TypeError(msg_type)
 
     for row in matrix:
