@@ -1,12 +1,8 @@
 #!/usr/bin/python3
+"""Unittest for max_integer([..])"""
 import unittest
-import sys
-import os
+max_integer = __import__('6-max_integer').max_integer
 
-# Add the parent directory to sys.path so Python can find the module
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from max_integer import max_integer  # Import the function from your module
 
 class TestMaxInteger(unittest.TestCase):
     """Test cases for the max_integer function."""
