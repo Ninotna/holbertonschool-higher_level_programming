@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+Search and update
+"""
+
 def append_after(filename="", search_string="", new_string=""):
     """
     append_after - Inserts a line of text after each line containing 
